@@ -19,7 +19,7 @@ st.set_page_config(
 # Function to load dataset
 @st.cache_data
 def load_data() :
-    return pd.read_csv('data\DataCoSupplyChainDataset.csv',
+    return pd.read_csv('data/DataCoSupplyChainDataset.csv',
                        delimiter = ',', encoding='latin-1')
 
 # Load dataset
