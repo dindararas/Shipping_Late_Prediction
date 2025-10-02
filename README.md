@@ -101,7 +101,7 @@ Random Forest and Decision Tree are overfitting to the training data, shown by a
 Although Logistic Regression and XGBoost are good for data generalization, these models are possibly underfitting
 There is no difference in model performance between original dan outlier handling
 
-## Hyperparameter Tuning
+### Hyperparameter Tuning
 <img width="252" height="197" alt="image" src="https://github.com/user-attachments/assets/8eaf21f7-353b-47dd-a368-6c950bf69364" />
 <img width="212" height="146" alt="image" src="https://github.com/user-attachments/assets/38f6c099-ca95-4178-98c7-2fb361651b88" />
 
@@ -110,7 +110,7 @@ There is no difference in model performance between original dan outlier handlin
 2. **False Positive Rate (0.08)** : About 8% of on-time delivery were incorrectly predicted as late delivery risk
 3. **False Negative Rate (0.08)** : About 8% of late delivery were incorrectly predicted as on-time
 
-## Feature Importance
+### Feature Importance
 Features importance from XGBoost model's prediction :
 * `Days for shipment (scheduled)` : this feature has the highest importance (+1.76) for predicting late delivery risk. The result highlights that estimating the required shipping days is essential to reduce the probability of delayed delivery by allocating resources and time efficiently
 * `Customer Street_encoded` : although customer street is not directly related to order destination, this feature ranks second for the highest importance (+0.92)
@@ -118,7 +118,7 @@ Features importance from XGBoost model's prediction :
 * `Order City_en_encoded` and `Type_encoded` : these features have relatively high importance (+0.62 and +0.66, respectively) which indicate that payment type and destination city influence late delivery risk. This makes sense since order destination is related to distance. Meanwhile, the duration of payment confirmation can also influence late delivery
 * `shipping_month` and `shipping_hours` : some months/hours with high shipping volumes led to higher late delivery risk
 
-# ✍ BUSINESS RECOMMENDATIONS
+## ✍ BUSINESS RECOMMENDATIONS
 **1. Adjust Shipping Schedules**
 * Develop model to estimate actual shipping days more accurately
 * Extend shipping days to lower late delivery risk
